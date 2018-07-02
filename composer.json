@@ -3,6 +3,17 @@
   "description": "Very limited Bundle based on JustinRainbow's Json Validation lib",
   "name": "hrombach/json-validation-bundle",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Hendrik Rombach",
+      "email": "hr@netinventors.de",
+      "role": "Developer"
+    },
+    {
+      "name": "Net Inventors GmbH",
+      "homepage": "https://netinventors.de"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Hero\\Bundle\\JsonValidation\\": ""
