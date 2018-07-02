@@ -1,0 +1,14 @@
+services:
+    _defaults:
+        autowire: false
+        public: false
+
+    json_validator:
+        class: Hero\Bundle\JsonValidation\Validator
+        public: true
+        arguments:
+            $projectDir: '%kernel.project_dir%'
+
+    Hero\Bundle\JsonValidation\Validator:
+        alias: 'json_validator'
+        public: true
