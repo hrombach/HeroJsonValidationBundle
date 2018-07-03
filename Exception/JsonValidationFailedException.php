@@ -25,15 +25,15 @@ final class JsonValidationFailedException extends JsonValidationException
         ))->setValidationErrors($validationErrors);
     }
 
-    public function getValidationErrors() : array
-    {
-        return $this->validationErrors;
-    }
-
-    private function setValidationErrors(array $validationErrors) : self
+    private function setValidationErrors(array $validationErrors): self
     {
         $this->validationErrors = $validationErrors;
 
         return $this;
+    }
+
+    public function getValidationErrors(): array
+    {
+        return $this->validationErrors;
     }
 }
