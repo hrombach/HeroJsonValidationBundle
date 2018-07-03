@@ -35,6 +35,8 @@ class Validator
     /**
      * @param \stdClass $payload
      * @param string    $schemaFilePath - if no fully qualified path is provided, the schema dir will be prepended
+     *
+     * @throws JsonValidationFailedException
      */
     public function validate(\stdClass $payload, string $schemaFilePath) : void
     {
@@ -56,6 +58,9 @@ class Validator
      * @param string  $schemaFilePath
      *
      * @return \stdClass
+     *
+     * @throws JsonValidationFailedException
+     * @throws JsonSchemaNotFoundException
      */
     public function validateRequest(Request $request, string $schemaFilePath = '') : \stdClass
     {
