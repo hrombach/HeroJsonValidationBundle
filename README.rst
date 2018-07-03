@@ -98,4 +98,4 @@ To be the most lazy (like me) just use
     }
 
 In the beginning of your controller action.
-The validator will try to find a file named after the ``_route`` of your request, appended with ``.schema.json``.
+The validator will try to find a file named after the ``_route`` of your request, appended with ``.schema.json`` in ``%kernel.project_dir%/public/schema``.
